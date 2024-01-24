@@ -1,0 +1,155 @@
+[
+    {
+        "id": "0",
+        "name": "GTX 1060",
+        "architecture": "Pascal",
+        "memory": "6 GB GDDR5",
+        "coreClock": "1506 MHz",
+        "boostClock": "1708 MHz",
+        "powerConsumption": "120W"
+    },
+    {
+        "id": "1",
+        "name": "GTX 1070",
+        "architecture": "Pascal",
+        "memory": "8 GB GDDR5",
+        "coreClock": "1506 MHz",
+        "boostClock": "1683 MHz",
+        "powerConsumption": "150W"
+    },
+    {
+        "id": "2",
+        "name": "GTX 1080",
+        "architecture": "Pascal",
+        "memory": "8 GB GDDR5X",
+        "coreClock": "1607 MHz",
+        "boostClock": "1733 MHz",
+        "powerConsumption": "180W"
+    },
+    {
+        "id": "3",
+        "name": "GTX 1080 Ti",
+        "architecture": "Pascal",
+        "memory": "11 GB GDDR5X",
+        "coreClock": "1480 MHz",
+        "boostClock": "1582 MHz",
+        "powerConsumption": "250W"
+    },
+    {
+        "id": "4",
+        "name": "RTX 2060",
+        "architecture": "Turing",
+        "memory": "6 GB GDDR6",
+        "coreClock": "1365 MHz",
+        "boostClock": "1680 MHz",
+        "powerConsumption": "160W"
+    },
+    {
+        "id": "5",
+        "name": "RTX 2070",
+        "architecture": "Turing",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1410 MHz",
+        "boostClock": "1620 MHz",
+        "powerConsumption": "175W"
+    },
+    {
+        "id": "6",
+        "name": "RTX 2080",
+        "architecture": "Turing",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1515 MHz",
+        "boostClock": "1800 MHz",
+        "powerConsumption": "215W"
+    },
+    {
+        "id": "7",
+        "name": "RTX 2080 Ti",
+        "architecture": "Turing",
+        "memory": "11 GB GDDR6",
+        "coreClock": "1350 MHz",
+        "boostClock": "1635 MHz",
+        "powerConsumption": "250W"
+    },
+    {
+        "id": "8",
+        "name": "RTX 3060",
+        "architecture": "Ampere",
+        "memory": "12 GB GDDR6",
+        "coreClock": "1320 MHz",
+        "boostClock": "1777 MHz",
+        "powerConsumption": "170W"
+    },
+    {
+        "id": "9",
+        "name": "RTX 3070",
+        "architecture": "Ampere",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1500 MHz",
+        "boostClock": "1730 MHz",
+        "powerConsumption": "220W"
+    },
+    {
+        "id": "10",
+        "name": "RTX 3080",
+        "architecture": "Ampere",
+        "memory": "10 GB GDDR6X",
+        "coreClock": "1440 MHz",
+        "boostClock": "1710 MHz",
+        "powerConsumption": "320W"
+    },
+    {
+        "id": "11",
+        "name": "RTX 3090",
+        "architecture": "Ampere",
+        "memory": "24 GB GDDR6X",
+        "coreClock": "1400 MHz",
+        "boostClock": "1695 MHz",
+        "powerConsumption": "350W"
+    },
+    {
+        "id": "12",
+        "name": "RTX 3090 Ti",
+        "architecture": "Ampere",
+        "memory": "24 GB GDDR6X",
+        "coreClock": "TBD",
+        "boostClock": "TBD",
+        "powerConsumption": "TBD"
+    },
+    {
+        "id": "13",
+        "name": "RTX 4070",
+        "architecture": "Ada Lovelace",
+        "memory": "16 GB GDDR6X",
+        "coreClock": "TBD",
+        "boostClock": "TBD",
+        "powerConsumption": "TBD"
+    },
+    {
+        "id": "14",
+        "name": "RTX 4080",
+        "architecture": "Ada Lovelace",
+        "memory": "16 GB GDDR6X",
+        "coreClock": "TBD",
+        "boostClock": "TBD",
+        "powerConsumption": "TBD"
+    },
+    {
+        "id": "15",
+        "name": "RTX 4090",
+        "architecture": "Ada Lovelace",
+        "memory": "24 GB GDDR6X",
+        "coreClock": "TBD",
+        "boostClock": "TBD",
+        "powerConsumption": "TBD"
+    },
+    {
+        "id": "16",
+        "name": "RTX 4090 Ti",
+        "architecture": "Ada Lovelace",
+        "memory": "24 GB GDDR6X",
+        "coreClock": "TBD",
+        "boostClock": "TBD",
+        "powerConsumption": "TBD"
+    }
+]
