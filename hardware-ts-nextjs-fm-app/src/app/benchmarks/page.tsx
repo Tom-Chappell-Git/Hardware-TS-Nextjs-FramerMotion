@@ -3,9 +3,9 @@
 // Import React and any other necessary dependencies
 import { motion } from "framer-motion"
 import Head from "next/head"
-import Link from "next/link";
 
 import Navbar from "../components/navbar";
+import Search from "../components/search";
 import benchmarksJson from '../productinfos/blender.json';
 
 
@@ -16,12 +16,14 @@ const Benchmarks: React.FC = () => {
   // Render the component
   return (
 <>
-    
+
     <Head>
       <title>Benchmarks</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Navbar />
+
+    <Search />
 
     <motion.div
         initial={{ opacity: 0 }}
@@ -29,11 +31,11 @@ const Benchmarks: React.FC = () => {
         transition={{ duration: 1}}
       >
       <div className="mt-20">
-        <table>
-          <thead>
-            <tr>
+        <table className="border-2">
+          <thead className="border-2">
+            <tr className="border-2 ">
               {benchmarksJson.header.map((headerItem, index) => (
-                <th key={index}>{headerItem}</th>
+                <th className=" pr-4" key={index}>{headerItem}</th>
               ))}
             </tr>
           </thead>
