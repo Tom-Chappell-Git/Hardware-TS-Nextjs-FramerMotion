@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
                 <Link href="/">Home</Link>
                 <Link href="/cpus">CPUs</Link>
                 <Link href="/gpus">GPUs</Link>
+                <Link href="/benchmarks">Benchmarks</Link>
             </motion.nav>
         </>
     );
