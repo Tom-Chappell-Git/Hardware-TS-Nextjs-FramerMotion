@@ -9,6 +9,8 @@ Add Intel gpus
 Add AMD gpus
 
 Add comparison section
+Two search bars? Select by click?
+
 add logic to check if two pieces of hardware are comparible (cpu - cpu | not RAM - cpu)
 
 Add percentage increases text - icon?
