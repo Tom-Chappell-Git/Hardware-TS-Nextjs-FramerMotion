@@ -68,37 +68,7 @@ const Benchmarks: React.FC = () => {
               </div>
             </div>
           </motion.div>
-
-
-{/* Display value of Score cell after updating after a search (table 1) */}
-
-          {highlightedRow !== null && (
-            <div className="mt-4">
-              <h2 className="underline">Selected Row:</h2>
-              <p>{benchmarksJson.body.filter((item) =>
-                searchTerm === ''
-                  ? true
-                  : (item as string[]).some((cell) =>
-                    cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm.toLowerCase())
-                  )
-              )[highlightedRow][1]}</p>
-            </div>
-          )}
-{/* {/* Display value of Score cell after updating after a search (table 2) */}
-
-          {highlightedRow2 !== null && (
-            <div className="mt-4">
-              <h2 className="underline">Selected Row:</h2>
-              <p>{benchmarksJson.body.filter((item) =>
-                searchTerm2 === ''
-                  ? true
-                  : (item as string[]).some((cell) =>
-                    cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm2.toLowerCase())
-                  )
-              )[highlightedRow2][1]}</p>
-            </div>
-          )}
-          
+        
 
 
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
