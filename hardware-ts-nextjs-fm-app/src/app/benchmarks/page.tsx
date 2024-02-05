@@ -70,7 +70,7 @@ const Benchmarks: React.FC = () => {
           </motion.div>
         
 
-
+          {/* -----------  --------- */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
             const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100;
             return (
@@ -158,7 +158,7 @@ const Benchmarks: React.FC = () => {
           </motion.div>
 
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
-            const percentageIncrease = ((Number(updatedTable2[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100;
+            const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100;
             return (
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
