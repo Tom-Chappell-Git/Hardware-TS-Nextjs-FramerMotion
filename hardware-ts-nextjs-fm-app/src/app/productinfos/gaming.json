@@ -1,0 +1,99 @@
+[
+    {
+      "game title": "Assassin's Creed Valhalla",
+      "average frame-rate": 60,
+      "gpu": "NVIDIA GeForce RTX 3080",
+      "cpu": "AMD Ryzen 9 5900X",
+      "cpu_price": 550,
+      "gpu_price": 700
+    },
+    {
+      "game title": "Cyberpunk 2077",
+      "average frame-rate": 45,
+      "gpu": "AMD Radeon RX 6800 XT",
+      "cpu": "Intel Core i7-10700K",
+      "cpu_price": 400,
+      "gpu_price": 650
+    },
+    {
+      "game title": "Fortnite",
+      "average frame-rate": 120,
+      "gpu": "NVIDIA GeForce GTX 1660 Ti",
+      "cpu": "AMD Ryzen 5 5600X",
+      "cpu_price": 300,
+      "gpu_price": 300
+    },
+    {
+      "game title": "Minecraft",
+      "average frame-rate": 200,
+      "gpu": "NVIDIA GeForce RTX 3060",
+      "cpu": "Intel Core i5-10600K",
+      "cpu_price": 250,
+      "gpu_price": 400
+    },
+    {
+      "game title": "Call of Duty: Warzone",
+      "average frame-rate": 80,
+      "gpu": "AMD Radeon RX 5700 XT",
+      "cpu": "Intel Core i9-10900K",
+      "cpu_price": 500,
+      "gpu_price": 450
+    },
+    {
+      "game title": "The Witcher 3: Wild Hunt",
+      "average frame-rate": 55,
+      "gpu": "NVIDIA GeForce GTX 1080",
+      "cpu": "AMD Ryzen 7 3700X",
+      "cpu_price": 350,
+      "gpu_price": 300
+    },
+    {
+      "game title": "Overwatch",
+      "average frame-rate": 144,
+      "gpu": "NVIDIA GeForce RTX 3070",
+      "cpu": "Intel Core i5-9600K",
+      "cpu_price": 250,
+      "gpu_price": 500
+    },
+    {
+      "game title": "League of Legends",
+      "average frame-rate": 200,
+      "gpu": "AMD Radeon RX 5600 XT",
+      "cpu": "AMD Ryzen 5 3600",
+      "cpu_price": 200,
+      "gpu_price": 300
+    },
+    {
+      "game title": "Counter-Strike: Global Offensive",
+      "average frame-rate": 300,
+      "gpu": "NVIDIA GeForce GTX 1650",
+      "cpu": "Intel Core i3-10100",
+      "cpu_price": 150,
+      "gpu_price": 200
+    },
+    {
+      "game title": "Rocket League",
+      "average frame-rate": 120,
+      "gpu": "NVIDIA GeForce GTX 1060",
+      "cpu": "AMD Ryzen 3 3300X",
+      "cpu_price": 120,
+      "gpu_price": 180
+    },
+    {
+      "game title": "Red Dead Redemption 2",
+      "average frame-rate": 50,
+      "gpu": "AMD Radeon RX 5500 XT",
+      "cpu": "Intel Core i5-8400",
+      "cpu_price": 180,
+      "gpu_price": 220
+    },
+    {
+      "game title": "Dota 2",
+      "average frame-rate": 160,
+      "gpu": "NVIDIA GeForce GTX 980",
+      "cpu": "AMD Ryzen 5 2600",
+      "cpu_price": 150,
+      "gpu_price": 200
+    }
+  ]
+  
