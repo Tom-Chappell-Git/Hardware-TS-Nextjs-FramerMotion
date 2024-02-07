@@ -1,6 +1,7 @@
 // components/ProductCard.tsx
 import React from 'react';
 import Image from "next/image";
+import Tooltip from '@mui/material/Tooltip';
 
 interface GpuProductCardProps {
     product: {
@@ -24,11 +25,32 @@ const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
         />
         <div className="product-info">
             <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-            <p>Architecture: {product.architecture}</p>
-            <p>Memory: {product.memory}</p>
-            <p>Core Clock: {product.coreClock}</p>
-            <p>Boost Clock: {product.boostClock}</p>
-            <p>Power Consumption: {product.powerConsumption}</p>
+            
+            <Tooltip title="The architecture of the GPU." 
+            placement="right">
+                <p>Architecture: {product.architecture}</p>
+            </Tooltip>
+
+            <Tooltip title="The more VRAM, the more graphics information can be processed at one time."
+             placement="right">
+                <p>Memory/VRAM: {product.memory}</p>
+            </Tooltip>
+
+            <Tooltip title="The base clock speed of the GPU's cores." 
+            placement="right">
+                <p>Core Clock: {product.coreClock}</p>
+            </Tooltip>
+
+            <Tooltip title="The maximum clock speed the GPU can achieve under load." 
+            placement="right">
+                <p>Boost Clock: {product.boostClock}</p>
+            </Tooltip>
+
+            <Tooltip title="The power consumption of the GPU." 
+            placement="right">
+                <p>Power Consumption: {product.powerConsumption}</p>
+            </Tooltip>
+
         </div>
     </div>
 );

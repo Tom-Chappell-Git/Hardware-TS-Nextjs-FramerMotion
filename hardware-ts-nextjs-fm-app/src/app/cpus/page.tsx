@@ -2,9 +2,9 @@
 
 //! This is the code for the CPUs page
 
+import * as React from 'react';
 import { motion } from "framer-motion"
 import Head from "next/head"
-import Link from "next/link";
 
 import Navbar from "../components/navbar";
 import ProductCard from '../components/productCard';
