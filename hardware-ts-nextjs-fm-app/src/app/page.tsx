@@ -32,7 +32,7 @@ base_clock: string;
 boost_clock: string; 
 cache: string;
 tdp: string;
-architecture: string;           
+architecture: string;     
 }
 
 interface Ryzen {
@@ -52,9 +52,10 @@ export default function Home(): JSX.Element {
   return (
     <main>
       <Head>
-        <title>Home</title>
+        <title>Benchware</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
