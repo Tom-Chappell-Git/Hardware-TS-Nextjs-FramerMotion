@@ -1,8 +1,9 @@
 // components/ProductCard.tsx
 import React from 'react';
 import Image from "next/image";
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip'; // Tooltip is a component from Material-UI.
 
+// GpuProductCardProps is an interface that defines the type of the product prop.
 interface GpuProductCardProps {
     product: {
         id: string;
@@ -15,6 +16,7 @@ interface GpuProductCardProps {
     };
 }
 
+// GpuProductCard is a functional component that takes in a product prop of type GpuProductCardProps.
 const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
     <div className="product-card border p-4 rounded-md shadow-md mb-4" onClick={() => console.log("clicked")}>
         <Image className="w-full h-40 object-contain mb-4 rounded-md"
@@ -26,6 +28,7 @@ const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
         <div className="product-info">
             <h3 className="text-xl font-bold mb-2">{product.name}</h3>
             
+            {/* Tooltip that displays title as text in the tooltip on the webpage */}
             <Tooltip title="The architecture of the GPU." 
             placement="right">
                 <p>Architecture: {product.architecture}</p>

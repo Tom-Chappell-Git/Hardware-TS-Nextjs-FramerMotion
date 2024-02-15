@@ -3,12 +3,13 @@ import { useState } from 'react';
 
 import benchmarksJson from '../productinfos/blender.json';
 
-interface Benchmark {
+interface Benchmark { // delete?
     keyword: string;
     name: string;
     // Add other properties here if needed
 }
 
+// delete?
 const Search: React.FC = () => {
 
     return (

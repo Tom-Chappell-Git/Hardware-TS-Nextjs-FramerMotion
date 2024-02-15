@@ -3,7 +3,7 @@
 // Import React and any other necessary dependencies
 import { motion } from "framer-motion"
 import Head from "next/head"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import Navbar from "../components/navbar";
 import benchmarksJson from '../productinfos/blender.json';
@@ -17,7 +17,6 @@ const Benchmarks: React.FC = () => {
   const [searchTerm2, setSearchTerm2] = useState<string>('');
   const [highlightedRow, setHighlightedRow] = useState<number | null>(null);
   const [highlightedRow2, setHighlightedRow2] = useState<number | null>(null);
-
   
 
   // Define the filtered data for table 1
@@ -46,9 +45,10 @@ const Benchmarks: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="grid grid-cols-2 lg:grid-cols-2 gap-4">
+      {/* Provide grid layout with two columns on large screens, 1 on small and med */}
+      <main className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0">
 
-        <section className="mr-4">
+        <section className="mr-4 grid-cols-1">
           <Navbar />
           
           <motion.div
@@ -70,13 +70,15 @@ const Benchmarks: React.FC = () => {
           </motion.div>
         
 
-
+        {/*  Render the table 1 and the comparison section if a row is highlighted in both tables  */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
+            // Calculate the percentage increase in the median score between the two highlighted rows 
             const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100;
             return (
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
 
+                {/* If the percentage increase is greater than 0, render the text in green, else render it in red */}
                 {percentageIncrease > 0 ? (
                   <p style={{ color: '#42f542' }}>{updatedTable[highlightedRow][0]} has a {percentageIncrease.toFixed(2)}% higher Median Score</p>
                 ) : (
@@ -94,9 +96,9 @@ const Benchmarks: React.FC = () => {
             <div className="mt-10">
               <table className="border-2 w-full mx-auto">
                 <thead>
-                  <tr>
-                    {benchmarksJson.header.map((headerItem, index) => (
-                      <th className=" p-2" key={index}>{headerItem}</th>
+                  <tr> 
+                    {benchmarksJson.header.map((headerItem, index) => ( // Map over the header array and render a table header for each item 
+                      <th className=" p-2" key={index}>{headerItem}</th>  // Render the header item and set the key to the index of the item in the array
                     ))}
                   </tr>
                 </thead>
@@ -105,17 +107,17 @@ const Benchmarks: React.FC = () => {
                     .filter((item) =>
                       searchTerm === ''
                         ? true
-                        : (item as string[]).some((cell) =>
-                          cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm.toLowerCase())
+                        : (item as string[]).some((cell) => // Filter the data based on the search term
+                          cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm.toLowerCase()) // Check if the cell contains the search term and return true if it does 
                         )
                     )
-                    .map((row, rowIndex) => (
+                    .map((row, rowIndex) => ( // Map over the filtered data and render a table row for each item
                       <motion.tr
                         key={rowIndex}
-                        onClick={() => setHighlightedRow(rowIndex)}
+                        onClick={() => setHighlightedRow(rowIndex)} // Set the highlightedRow state to the current index when the table row is clicked
                         initial={{ backgroundColor: 'transparent' }}
                         animate={{
-                          backgroundColor: highlightedRow === rowIndex ? '#4A5568' : 'transparent',
+                          backgroundColor: highlightedRow === rowIndex ? '#4A5568' : 'transparent', // Set the background color of the table row to gray if the row is highlighted, else set it to transparent
                         }}
 
                         className={'hover:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'}
@@ -129,8 +131,9 @@ const Benchmarks: React.FC = () => {
               </table>
             </div>
 
+                          {/* Link to the Blender website where the stats came from */}
             <div className="col-span-2 text-white underline text-xs ">
-            <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link>
+            <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link> 
           </div>
 
           </motion.div>
@@ -151,18 +154,21 @@ const Benchmarks: React.FC = () => {
                   type="text"
                   placeholder="Search for a CPU or GPU"
                   value={searchTerm2}
-                  onChange={(e) => setSearchTerm2(e.target.value)}
+                  onChange={(e) => setSearchTerm2(e.target.value)} // Update the search term state when the input value changes 
                 />
               </div>
             </div>
           </motion.div>
 
-          {highlightedRow !== null && highlightedRow2 !== null && (() => {
-            const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100;
-            return (
+          {/* Render the table 2 and the comparison section if a row is highlighted in both tables */}
+          {highlightedRow !== null && highlightedRow2 !== null && (() => { // If a row is highlighted in both tables, render the comparison section
+            const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100; 
+
+            return ( // Render the comparison section 
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
 
+                {/* If the percentage increase is greater than 0, render the text in green, else render it in red */}
                 {percentageIncrease > 0 ? (
                   <p style={{ color: '#ff0011' }}>{updatedTable2[highlightedRow2][0]} has a {percentageIncrease.toFixed(2)}% lower Median Score</p>
                 ) : (
@@ -181,24 +187,24 @@ const Benchmarks: React.FC = () => {
               <table className="border-2 w-full mx-auto">
                 <thead>
                   <tr>
-                    {benchmarksJson.header.map((headerItem, index) => (
+                    {benchmarksJson.header.map((headerItem, index) => ( // Map over the header array and render a table header for each item
                       <th className=" p-2" key={index}>{headerItem}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody className="cursor-pointer">
                   {benchmarksJson.body
-                    .filter((item) =>
+                    .filter((item) => // Filter the data based on the search term 
                       searchTerm2 === ''
                         ? true
                         : (item as string[]).some((cell) =>
-                          cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm2.toLowerCase())
+                          cell && typeof cell === 'string' && cell.toLowerCase().includes(searchTerm2.toLowerCase()) // Check if the cell contains the search term and return true if it does
                         )
                     )
                     .map((row, rowIndex) => (
                       <motion.tr
                         key={rowIndex}
-                        onClick={() => setHighlightedRow2(rowIndex)}
+                        onClick={() => setHighlightedRow2(rowIndex)} // Set the highlightedRow state to the current index when the table row is clicked
                         initial={{ backgroundColor: 'transparent' }}
                         animate={{
                           backgroundColor: highlightedRow2 === rowIndex ? '#4A5568' : 'transparent',
@@ -206,7 +212,7 @@ const Benchmarks: React.FC = () => {
 
                         className={'hover:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'}
                       >
-                        {row.map((cell, cellIndex) => (
+                        {row.map((cell, cellIndex) => ( // Map over the filtered data and render a table row for each item
                           <td className="pt-2 pl-2 border-t-2 border-white/70" key={cellIndex}>{cell}</td>
                         ))}
                       </motion.tr>
@@ -214,7 +220,7 @@ const Benchmarks: React.FC = () => {
                 </tbody>
               </table>
             </div>
-
+                        {/* Link to the Blender website where the stats came from */}
             <div className="col-span-2 text-white underline text-xs ">
             <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link>
           </div>

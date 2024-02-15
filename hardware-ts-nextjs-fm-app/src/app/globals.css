@@ -23,6 +23,7 @@ html {
   margin: 0 20px;
 }
 
+/* ******? GENERAL ****** */
 body {
 
   color: rgb(var(--foreground-rgb));
@@ -35,7 +36,6 @@ body {
     margin: 0 20px
 }
 
-/******?GENERAL ******/
 h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
 }

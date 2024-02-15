@@ -10,7 +10,15 @@ const Navbar: React.FC = () => {
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 1 }}
             >
-                <Link href="/">Home</Link>
+                <div className="relative group">
+                    <Link href="/benchmarks">Info</Link>
+                    <div className="absolute left-0  hidden group-hover:block bg-black text-white shadow-md rounded-md">
+                        <ul className="mx-6">
+                            <li><Link href="/" className="">Home</Link></li>
+                            <li><Link href="/cpubreakdown" className="">Cpu Breakdown</Link></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div className="relative group">
                     <Link href="/benchmarks">Hardware</Link>
