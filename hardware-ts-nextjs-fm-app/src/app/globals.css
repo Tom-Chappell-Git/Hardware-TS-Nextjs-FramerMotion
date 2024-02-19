@@ -150,9 +150,16 @@ padding: 0.5rem 1rem;
 
   /* font */
   font-family: monospace;
+
+  transition-duration: 2s ease-in-out;
+
 }
 
 .navbar-mobile:hover{
+  transition-duration: 2s ease-in-out;
+}
+
+.navbar-mobile-transition {
   transition-duration: 2s ease-in-out;
 }
 
