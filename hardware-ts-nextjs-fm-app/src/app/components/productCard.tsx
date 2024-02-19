@@ -3,7 +3,7 @@ import React from 'react';
 import Image from "next/image";
 import Tooltip from '@mui/material/Tooltip';
 
-
+// Product is an interface that defines the type of the product prop.
 interface Product {
     id: string;
     model: string;
@@ -16,14 +16,16 @@ interface Product {
     architecture: string;
 }
 
+// ProductCard is a functional component that takes in a product prop of type ProductCardProps.
 interface ProductCardProps {
     product: Product;
 }
 
+// ProductCard is a functional component that takes in a product prop of type ProductCardProps.
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
     <div className="product-card border p-4 rounded-md shadow-md mb-4" onClick={() => console.log("clicked")}>
         <Image className="w-full h-40 object-contain mb-4 rounded-md"
-            src={`/assets/${product.id}.png`}
+            src={`/assets/${product.id}.png`} 
             alt={product.model}
             width={1000}
             height={1000}
@@ -31,6 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
         <div className="product-info">
             <h3 className="text-xl font-bold mb-2">{product.model}</h3>
 
+             {/* Tooltip that displays title as text in the tooltip on the webpage */}
             <Tooltip title="Generally, more cores means better multitasking and faster data processing." 
                         placement="right">
                 <p>Cores: {product.cores}</p>
