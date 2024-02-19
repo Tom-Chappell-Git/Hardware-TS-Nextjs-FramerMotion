@@ -5,7 +5,9 @@ import Head from "next/head";
 import { useState } from "react";
 
 import Navbar from "../components/navbar";
+import MobileNavbar from "../components/mobileNavbar";
 import gamingData from '../productinfos/gaming.json';
+import { useMediaQuery } from "@mui/material";
 
 type Game = {
     "game title": string;
@@ -16,7 +18,11 @@ type Game = {
     "gpu_price": number;
 };
 
+
+
 const Gaming: React.FC = () => {
+
+    const isMobile = useMediaQuery("(max-width: 640px)");
 
     // create state for the search term and highlighted row
     const [searchTerm, setSearchTerm] = useState<string>('');
@@ -28,19 +34,21 @@ const Gaming: React.FC = () => {
     const updatedTable: Game[] = gamingData;
 
     return (
+        
         <>
+
             <Head>
                 <title>Gaming</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             {/* Probide grid layout with two columns on large screens, 1 on small and med */}
-            <main className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
+            <main className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4`}>
 
                 <section className="mr-4">
                    
                    {/* Import the navbar component to be rendered here */}
-                    <Navbar />
+                   {isMobile ? <MobileNavbar /> : <Navbar />}
                     
                     {/* Use framer motion to animate the content */}
                     <motion.div

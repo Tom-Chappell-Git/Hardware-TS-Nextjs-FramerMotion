@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
+import { useMediaQuery } from "@mui/material";
 
 import Navbar from "./components/navbar";
+import MobileNavbar from "./components/mobileNavbar";
 import ProductCard from './components/productCard';
 import GpuProductCard from './components/gpuCards';
 
@@ -49,6 +51,9 @@ architecture: string;
 
 
 export default function Home(): JSX.Element {
+
+  const isMobile = useMediaQuery("(max-width: 640px)");
+
   return (
     <main>
       <Head>
@@ -61,7 +66,7 @@ export default function Home(): JSX.Element {
         animate={{ opacity: 1 }}
         transition={{ duration: 1}}
       >
-        <Navbar />
+        {isMobile ? <MobileNavbar /> : <Navbar />}
 
         <h1 className="page-title">Browse</h1>    
       </motion.div>

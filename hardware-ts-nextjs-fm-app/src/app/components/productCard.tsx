@@ -16,7 +16,7 @@ interface Product {
     architecture: string;
 }
 
-// ProductCard is a functional component that takes in a product prop of type Product.
+// ProductCard is a functional component that takes in a product prop of type ProductCardProps.
 interface ProductCardProps {
     product: Product;
 }
@@ -25,7 +25,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
     <div className="product-card border p-4 rounded-md shadow-md mb-4" onClick={() => console.log("clicked")}>
         <Image className="w-full h-40 object-contain mb-4 rounded-md"
-            src={`/assets/${product.id}.png`}
+            src={`/assets/${product.id}.png`} 
             alt={product.model}
             width={1000}
             height={1000}

@@ -3,19 +3,22 @@
 //! This is the code for the CPU Breakdown page
 
 
-import React from "react";
 import { motion } from "framer-motion";
 
 import Navbar from "../components/navbar";
+import MobileNavbar from "../components/mobileNavbar";
+import { useMediaQuery } from "@mui/material";
 
 const CpuBreakdown: React.FC = () => {
+   
+    const isMobile = useMediaQuery("(max-width: 640px)");
+
+
     return (
         <>
-            <head>
-                <title>CPU Information</title>
-            </head>
+        
+        {isMobile ? <MobileNavbar /> : <Navbar />}
 
-            <Navbar />
 
             <motion.div
                 initial={{ opacity: 0 }}
@@ -44,7 +47,8 @@ const CpuBreakdown: React.FC = () => {
                 </div>
             </motion.div>
         </>
-    );
-};
+            );      
+        };
+        
 
 export default CpuBreakdown;

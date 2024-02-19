@@ -8,9 +8,17 @@ import { useState } from "react"
 import Navbar from "../components/navbar";
 import benchmarksJson from '../productinfos/blender.json';
 import Link from "next/link";
+import { useMediaQuery } from "@mui/material";
+import MobileNavbar from "../components/mobileNavbar";
+
+
 
 // Define the component
 const Benchmarks: React.FC = () => {
+
+  const isMobile = useMediaQuery("(max-width: 640px)");
+
+
 
   // Define the state for the search term and set the initial value to an empty string 
   const [searchTerm, setSearchTerm] = useState<string>('');
@@ -46,10 +54,10 @@ const Benchmarks: React.FC = () => {
       </Head>
 
       {/* Provide grid layout with two columns on large screens, 1 on small and med */}
-      <main className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0">
+      <main className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0  benchxsm">
 
-        <section className="mr-4 grid-cols-1">
-          <Navbar />
+        <section className="mr-4 grid-cols-1 ">
+        {isMobile ? <MobileNavbar /> : <Navbar />}
           
           <motion.div
             initial={{ opacity: 0 }}
