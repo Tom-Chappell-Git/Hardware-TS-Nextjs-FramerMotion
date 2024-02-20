@@ -1,6 +1,6 @@
 [
     {
-        "id": "0",
+        "id": "tx0",
         "name": "GTX 1060",
         "architecture": "Pascal",
         "memory": "6 GB GDDR5",
@@ -9,7 +9,7 @@
         "powerConsumption": "120W"
     },
     {
-        "id": "1",
+        "id": "tx1",
         "name": "GTX 1070",
         "architecture": "Pascal",
         "memory": "8 GB GDDR5",
@@ -18,7 +18,7 @@
         "powerConsumption": "150W"
     },
     {
-        "id": "2",
+        "id": "tx2",
         "name": "GTX 1080",
         "architecture": "Pascal",
         "memory": "8 GB GDDR5X",
@@ -27,7 +27,7 @@
         "powerConsumption": "180W"
     },
     {
-        "id": "3",
+        "id": "tx3",
         "name": "GTX 1080 Ti",
         "architecture": "Pascal",
         "memory": "11 GB GDDR5X",
@@ -36,7 +36,7 @@
         "powerConsumption": "250W"
     },
     {
-        "id": "4",
+        "id": "tx4",
         "name": "RTX 2060",
         "architecture": "Turing",
         "memory": "6 GB GDDR6",
@@ -45,7 +45,7 @@
         "powerConsumption": "160W"
     },
     {
-        "id": "5",
+        "id": "tx5",
         "name": "RTX 2070",
         "architecture": "Turing",
         "memory": "8 GB GDDR6",
@@ -54,7 +54,7 @@
         "powerConsumption": "175W"
     },
     {
-        "id": "6",
+        "id": "tx6",
         "name": "RTX 2080",
         "architecture": "Turing",
         "memory": "8 GB GDDR6",
@@ -63,7 +63,7 @@
         "powerConsumption": "215W"
     },
     {
-        "id": "7",
+        "id": "tx7",
         "name": "RTX 2080 Ti",
         "architecture": "Turing",
         "memory": "11 GB GDDR6",
@@ -72,7 +72,7 @@
         "powerConsumption": "250W"
     },
     {
-        "id": "8",
+        "id": "tx8",
         "name": "RTX 3060",
         "architecture": "Ampere",
         "memory": "12 GB GDDR6",
@@ -81,7 +81,7 @@
         "powerConsumption": "170W"
     },
     {
-        "id": "9",
+        "id": "tx9",
         "name": "RTX 3070",
         "architecture": "Ampere",
         "memory": "8 GB GDDR6",
@@ -90,7 +90,7 @@
         "powerConsumption": "220W"
     },
     {
-        "id": "10",
+        "id": "tx10",
         "name": "RTX 3080",
         "architecture": "Ampere",
         "memory": "10 GB GDDR6X",
@@ -99,7 +99,7 @@
         "powerConsumption": "320W"
     },
     {
-        "id": "11",
+        "id": "tx11",
         "name": "RTX 3090",
         "architecture": "Ampere",
         "memory": "24 GB GDDR6X",
@@ -108,7 +108,7 @@
         "powerConsumption": "350W"
     },
     {
-        "id": "12",
+        "id": "tx12",
         "name": "RTX 3090 Ti",
         "architecture": "Ampere",
         "memory": "24 GB GDDR6X",
@@ -117,7 +117,7 @@
         "powerConsumption": "TBD"
     },
     {
-        "id": "13",
+        "id": "tx13",
         "name": "RTX 4070",
         "architecture": "Ada Lovelace",
         "memory": "16 GB GDDR6X",
@@ -126,7 +126,7 @@
         "powerConsumption": "TBD"
     },
     {
-        "id": "14",
+        "id": "tx14",
         "name": "RTX 4080",
         "architecture": "Ada Lovelace",
         "memory": "16 GB GDDR6X",
@@ -135,17 +135,8 @@
         "powerConsumption": "TBD"
     },
     {
-        "id": "15",
+        "id": "tx15",
         "name": "RTX 4090",
-        "architecture": "Ada Lovelace",
-        "memory": "24 GB GDDR6X",
-        "coreClock": "TBD",
-        "boostClock": "TBD",
-        "powerConsumption": "TBD"
-    },
-    {
-        "id": "16",
-        "name": "RTX 4090 Ti",
         "architecture": "Ada Lovelace",
         "memory": "24 GB GDDR6X",
         "coreClock": "TBD",
