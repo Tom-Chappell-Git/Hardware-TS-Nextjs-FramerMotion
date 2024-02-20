@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
                 <Link className="border-r border-orange-400 h-full" href={"/gpus"}>GPUs</Link>
                 <Link className="border-r border-orange-400 h-full" href={"/benchmarks"}>3D Benchmarks</Link>
                 <Link className="border-r border-orange-400 h-full" href={"/gaming"}>Gaming Benchmarks</Link>
-    
+    {/* Try: bg-black/0 box shadow from top fade to bottom */}
             </motion.nav>
 
         </>

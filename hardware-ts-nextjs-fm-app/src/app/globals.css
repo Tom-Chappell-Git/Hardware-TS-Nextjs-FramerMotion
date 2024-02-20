@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   /* style */
   background: #00000095;
   backdrop-filter: blur(5px);
-  box-shadow: inset 0 -1px 3px rgb(254, 254, 254);
+  box-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.3);
   /* border: 1px solid white; */
   border-radius: 2px;
 
