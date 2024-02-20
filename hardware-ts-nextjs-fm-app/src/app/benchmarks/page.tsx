@@ -77,12 +77,8 @@ const Benchmarks: React.FC = () => {
             </div>
           </motion.div>
         
-
-<<<<<<< HEAD
-          {/* -----------  --------- */}
-=======
+        
         {/*  Render the table 1 and the comparison section if a row is highlighted in both tables  */}
->>>>>>> hold
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
             // Calculate the percentage increase in the median score between the two highlighted rows 
             const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100;
