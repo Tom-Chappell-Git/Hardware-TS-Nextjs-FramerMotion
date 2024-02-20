@@ -35,7 +35,7 @@ const CpuBreakdown: React.FC = () => {
                 <article className="">
                     <h1 className="page-title">CPU Breakdown</h1>
 
-                    <p className="py-8">The CPU, or central processing unit, is the primary component of a computer responsible for executing instructions and performing calculations. It is often referred to as the &quot;brain&quot; of the computer and plays a crucial role in overall system performance.</p>
+                    <p className="py-8 px-4">The CPU, or central processing unit, is the primary component of a computer responsible for executing instructions and performing calculations. It is often referred to as the &quot;brain&quot; of the computer and plays a crucial role in overall system performance.</p>
 
                     <Accordion>
                         <AccordionSummary

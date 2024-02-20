@@ -6,10 +6,10 @@ import Tooltip from '@mui/material/Tooltip'; // Tooltip is a component from Mate
 
 
 // delete?
-const Search: React.FC = () => {
+const Search2: React.FC = () => {
 
      // Define the state for the search term and set the initial value to an empty string 
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTerm2, setSearchTerm2] = useState<string>('');
   
 
     return (
@@ -25,8 +25,8 @@ const Search: React.FC = () => {
               className="text-black font-semibold / border-2 border-white rounded-lg w-full / pl-2 py-1"
               type="text"
               placeholder="Search for a CPU or GPU"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              value={searchTerm2}
+              onChange={(e) => setSearchTerm2(e.target.value)}
             />
             </Tooltip>
           </div>
@@ -37,4 +37,4 @@ const Search: React.FC = () => {
 
 
 
-export default Search;
+export default Search2;
