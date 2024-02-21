@@ -48,8 +48,10 @@ Takes benchmark data from Blender.org to give users benchmark information to inf
 ## Development Roadmap
 The following is a list of features to be added to the project, in order (though the order may change).
 
-1. ~~Add GPU images~~
-2. Add AMD and Intel GPUs
+1. Add Tooltip for benchmarks
+2. 
+1. Fix % calculator for Benchmarks
+2. Add % calculator for Gaming
 3. Price to performance indicators on Benchmark pages
 4. Break pages down into smaller components
 5. Add Logo and favicon

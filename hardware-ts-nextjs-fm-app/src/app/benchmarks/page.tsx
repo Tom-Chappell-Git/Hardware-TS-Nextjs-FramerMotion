@@ -49,15 +49,25 @@ const Benchmarks: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Benchmarks</title>
+        <title>3D Benchmarks</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Provide grid layout with two columns on large screens, 1 on small and med */}
-      <main className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0  benchxsm">
+      <main className="wrapper">
+
+      <motion.h1 className="page-title"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1}}
+        >3D Benchmarks</motion.h1>
+
+      <section className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0 bench3d benchxsm">
 
         <section className="mr-4 grid-cols-1 ">
+
         {isMobile ? <MobileNavbar /> : <Navbar />}
+
           
           <motion.div
             initial={{ opacity: 0 }}
@@ -66,13 +76,18 @@ const Benchmarks: React.FC = () => {
           >
             <div className="flex justify-left items-center mt-24">
               <div className="w-full flex justify-center items-center">
-                <input
-                  className="text-black font-semibold / border-2 border-white rounded-lg w-full / pl-2 py-1"
-                  type="text"
-                  placeholder="Search for a CPU or GPU"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                />
+                <label  htmlFor="searchInput" aria-label="Search for a CPU or GPU by typing into the input field one"
+                        className="w-full"
+                >
+                  <input
+                    id="searchInput"
+                    className="text-black font-semibold / border-2 border-white rounded-lg w-full l-2 py-1"
+                    type="text"
+                    placeholder="Search for a CPU or GPU"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                  />
+                </label>
               </div>
             </div>
           </motion.div>
@@ -96,7 +111,7 @@ const Benchmarks: React.FC = () => {
             );
           })()}
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -140,33 +155,40 @@ const Benchmarks: React.FC = () => {
             </div>
 
                           {/* Link to the Blender website where the stats came from */}
-            <div className="col-span-2 text-white underline text-xs ">
-            <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link> 
-          </div>
-
-          </motion.div>
+            <article className="col-span-2 text-white underline text-xs ">
+            <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link>
+          </article>
+          
+          </motion.article>
         </section>
 
 
 {/* ------------------- Table 2 ----------------- */}
-        <section>
-          <motion.div
+        <section> 
+          
+          <motion.article
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
             <div className="flex justify-left items-center mt-24">
               <div className="w-full flex justify-center items-center">
-                <input
-                  className="text-black font-semibold / border-2 border-white rounded-lg w-full / pl-2 py-1"
-                  type="text"
-                  placeholder="Search for a CPU or GPU"
+              <label  htmlFor="searchInput" aria-label="Search for a CPU or GPU by typing into the input field two"
+                      className="w-full"
+                >
+                  <input
+                  
+                    id="searchInput"
+                    className="text-black font-semibold / border-2 border-white rounded-lg w-full / pl-2 py-1"
+                    type="text"
+                    placeholder="Search for a CPU or GPU"
                   value={searchTerm2}
                   onChange={(e) => setSearchTerm2(e.target.value)} // Update the search term state when the input value changes 
                 />
+              </label>
               </div>
             </div>
-          </motion.div>
+          </motion.article>
 
           {/* Render the table 2 and the comparison section if a row is highlighted in both tables */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => { // If a row is highlighted in both tables, render the comparison section
@@ -186,12 +208,12 @@ const Benchmarks: React.FC = () => {
             );
           })()}
 
-          <motion.div
+          <motion.article
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <div className="mt-10">
+            <section className="mt-10">
               <table className="border-2 w-full mx-auto">
                 <thead>
                   <tr>
@@ -227,15 +249,16 @@ const Benchmarks: React.FC = () => {
                     ))}
                 </tbody>
               </table>
-            </div>
+            </section>
                         {/* Link to the Blender website where the stats came from */}
-            <div className="col-span-2 text-white underline text-xs ">
+            <article className="col-span-2 text-white underline text-xs ">
             <Link href="https://opendata.blender.org/">Benchmark data taken from Blender.org</Link>
-          </div>
+          </article>
 
-          </motion.div>
+          </motion.article>
         </section>
 
+      </section>
       </main>
     </>
   );

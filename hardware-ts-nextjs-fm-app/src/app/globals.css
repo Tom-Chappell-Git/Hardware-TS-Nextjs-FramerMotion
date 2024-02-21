@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* font */
   font-family: monospace;
+  font-size: 0.85em;
 }
 
 /* Responsive Styles */
@@ -176,14 +177,32 @@ padding: 0rem 2rem;
 
 /********? Benchmark Grid *********/
 
-@media (max-width: 640px) {
+/* double-check min-width for desktops */
+@media screen and (min-width: 768px) {
+  .bench3d {
+    margin-top: -3rem ;
+  }
+  
+}
+
+/* add medium screen query */
+
+@media (max-width: 1250px) {
   .benchxsm {
     grid-template-columns: 1fr;
-    font-size:0.6em
+    font-size:0.6em;
   }
 
 }
 
+/********? Gaming  *********/
+
+@media screen and (max-width: 768px) {
+  .bench-gaming {
+    font-size: 0.6em;
+  }
+  
+}
 
 
 /* The Modal (background) */

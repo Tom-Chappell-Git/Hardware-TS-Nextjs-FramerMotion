@@ -42,16 +42,18 @@ const Gaming: React.FC = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* Probide grid layout with two columns on large screens, 1 on small and med */}
-            <main className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4`}>
+        <main className="wrapper">
 
-                <section className="mr-4">
+            {/* Probide grid layout with two columns on large screens, 1 on small and med */}
+            <section className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 bench-gaming gamingxsm`}>
+
+                <section className="mr-4 grid-span-1">
                    
                    {/* Import the navbar component to be rendered here */}
                    {isMobile ? <MobileNavbar /> : <Navbar />}
                     
                     {/* Use framer motion to animate the content */}
-                    <motion.div
+                    <motion.section
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
@@ -62,13 +64,17 @@ const Gaming: React.FC = () => {
                                 <div className="flex flex-col justify-center items-center">
                                     <h1 className="text-4xl font-bold text-white mb-4">Game Benchmarks</h1>
                                     <div className="w-full flex justify-center items-center">
-                                        <input 
+                                        <label  htmlFor="search" aria-label="search input for gaming benchmarks"
+                                                className="w-full" >
+                                        <input
+                                            id="search"
                                             type="text"
                                             placeholder="Search"
-                                            className="w-full p-2 border-2 border-gray-300 rounded-md"
+                                            className="w-full p-2 border-2 border-gray-300 rounded-md text-black"
                                             value={searchTerm}
                                             onChange={(e) => setSearchTerm(e.target.value)} // Update the search term state when the input value changes
                                         />
+                                        </label>
                                     </div>
 
                                     {/* Create a table to display the gaming data */}
@@ -107,10 +113,18 @@ const Gaming: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.section>
+                    </section>
+
+                    <section className="mr-4 grid-span-2">
+
+                        <h2 className="my-36 mx-10">Game Data</h2>
+
                     </section>
                     
-                </main>
+                </section>
+                
+            </main>
             </>
         );
 };
