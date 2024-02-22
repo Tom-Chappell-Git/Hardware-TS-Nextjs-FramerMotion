@@ -124,39 +124,39 @@
         "name": "RTX 3090 Ti",
         "architecture": "Ampere",
         "memory": "24 GB GDDR6X",
-        "coreClock": "TBD",
-        "boostClock": "TBD",
-        "powerConsumption": "TBD",
-        "price": "TBD"
+        "coreClock": "1400 MHz",
+        "boostClock": "1750 MHz",
+        "powerConsumption": "400W",
+        "price": "£2000"
     },
     {
         "id": "tx13",
         "name": "RTX 4070",
         "architecture": "Ada Lovelace",
         "memory": "16 GB GDDR6X",
-        "coreClock": "TBD",
-        "boostClock": "TBD",
-        "powerConsumption": "TBD",
-        "price": "TBD"
+        "coreClock": "1600 MHz",
+        "boostClock": "2000 MHz",
+        "powerConsumption": "300W",
+        "price": "£1200"
     },
     {
         "id": "tx14",
         "name": "RTX 4080",
         "architecture": "Ada Lovelace",
         "memory": "16 GB GDDR6X",
-        "coreClock": "TBD",
-        "boostClock": "TBD",
-        "powerConsumption": "TBD",
-        "price": "TBD"
+        "coreClock": "1700 MHz",
+        "boostClock": "2100 MHz",
+        "powerConsumption": "350W",
+        "price": "£1500"
     },
     {
         "id": "tx15",
         "name": "RTX 4090",
         "architecture": "Ada Lovelace",
         "memory": "24 GB GDDR6X",
-        "coreClock": "TBD",
-        "boostClock": "TBD",
-        "powerConsumption": "TBD",
-        "price": "TBD"
+        "coreClock": "1800 MHz",
+        "boostClock": "2200 MHz",
+        "powerConsumption": "450W",
+        "price": "£2500"
     }
 ]

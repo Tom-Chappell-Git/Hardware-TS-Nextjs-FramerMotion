@@ -85,7 +85,7 @@ const Benchmarks: React.FC = () => {
                 >
                   <input
                     id="searchInput"
-                    className="text-black font-semibold / border-2 border-white rounded-lg w-full l-2 py-1"
+                    className="text-black font-semibold / border-2 border-white rounded-lg w-full pl-2 py-1"
                     type="text"
                     placeholder="Search for a CPU or GPU"
                     value={searchTerm}
@@ -101,7 +101,11 @@ const Benchmarks: React.FC = () => {
         {/*  Render the table 1 and the comparison section if a row is highlighted in both tables  */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => {
             // Calculate the percentage increase in the median score between the two highlighted rows 
-            const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100;
+            const firstTableSelected = highlightedRow !== null && highlightedRow2 !== null && highlightedRow < highlightedRow2;
+
+            const percentageIncrease = firstTableSelected
+              ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100
+              : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Number(updatedTable[highlightedRow][1])) * 100;
             return (
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
@@ -201,7 +205,11 @@ const Benchmarks: React.FC = () => {
 
           {/* Render the table 2 and the comparison section if a row is highlighted in both tables */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => { // If a row is highlighted in both tables, render the comparison section
-            const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100; 
+            const percentageIncrease = highlightedRow !== null && highlightedRow2 !== null
+              ? (highlightedRow < highlightedRow2
+                ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100
+                : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1]))) * 100)
+              : 0;
 
             return ( // Render the comparison section 
               

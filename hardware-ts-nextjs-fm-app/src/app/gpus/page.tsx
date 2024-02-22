@@ -62,7 +62,8 @@ export default function GPUs() {
             </div>
         </div>
 
-          {/* AMD GPUS CARDS */}       
+          {/* AMD GPUS CARDS */}     
+
         <div className="container mx-auto p-4 py-10">
           <h2 className="text-3xl font-bold mb-6 font-mono">AMD GPUs</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -80,8 +81,9 @@ export default function GPUs() {
         </div>
 
           {/* ARC GPUS CARDS */}
+          
         <div className="container mx-auto p-4 py-10">
-          <h2 className="text-3xl font-bold mb-6 font-mono">Arc GPUs</h2>
+          <h2 className="text-3xl font-bold mb-6 font-mono">Intel GPUs</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {arcGpus.map((product, index) => (
                 <motion.div

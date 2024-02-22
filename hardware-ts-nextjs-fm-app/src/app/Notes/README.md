@@ -48,13 +48,17 @@ Takes benchmark data from Blender.org to give users benchmark information to inf
 ## Development Roadmap
 The following is a list of features to be added to the project, in order (though the order may change).
 
-1. 
-2. 
-1. Fix % calculator for Benchmarks
-2. Add % calculator for Gaming
-3. Price to performance indicators on Benchmark pages
-4. Break pages down into smaller components
-5. Add Logo and favicon
-6. Link from product card to benchmarks and vise versa.
-7. Links to other useful resources; PC building websites and YouTube videos
-8. Add "Pros and Cons" for each CPU and GPU (probably on the product card)
+
+1. Add Logo and favicon
+2. Link from product card to benchmarks and vise versa.
+3. Links to other useful resources; PC building websites and YouTube videos
+4. Add "Pros and Cons" for each CPU and GPU (probably on the product card)
+5. Fix % calculator for Benchmarks
+6. Add % calculator for Gaming
+7. Price to performance indicators on Benchmark pages
+8. Break pages down into smaller components
+
+
+## Minor changes to be made
+
+1. Correct RTX 4080 image
