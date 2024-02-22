@@ -205,7 +205,12 @@ const Benchmarks: React.FC = () => {
 
           {/* Render the table 2 and the comparison section if a row is highlighted in both tables */}
           {highlightedRow !== null && highlightedRow2 !== null && (() => { // If a row is highlighted in both tables, render the comparison section
-            const percentageIncrease = highlightedRow !== null && highlightedRow2 !== null
+           
+           // Calculate the percentage increase in the median score between the two highlighted rows 
+            const firstTableSelected = highlightedRow !== null && highlightedRow2 !== null && highlightedRow2 < highlightedRow;
+
+            const percentageIncrease = firstTableSelected
+            
               ? (highlightedRow < highlightedRow2
                 ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100
                 : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1]))) * 100)
