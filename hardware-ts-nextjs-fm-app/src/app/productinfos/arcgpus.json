@@ -1,0 +1,92 @@
+[
+    {
+        "id": "arc0",
+        "name": "ARC 660",
+        "architecture": "Xe",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1600 MHz",
+        "boostClock": "1900 MHz",
+        "powerConsumption": "150W",
+        "price": "£250"
+    },
+    {
+        "id": "arc1",
+        "name": "ARC 670",
+        "architecture": "Xe",
+        "memory": "12 GB GDDR6",
+        "coreClock": "1800 MHz",
+        "boostClock": "2100 MHz",
+        "powerConsumption": "180W",
+        "price": "£350"
+    },
+    {
+        "id": "arc2",
+        "name": "ARC 680",
+        "architecture": "Xe",
+        "memory": "16 GB GDDR6",
+        "coreClock": "2000 MHz",
+        "boostClock": "2300 MHz",
+        "powerConsumption": "220W",
+        "price": "£450"
+    },
+    {
+        "id": "arc3",
+        "name": "ARC 690",
+        "architecture": "Xe",
+        "memory": "24 GB GDDR6",
+        "coreClock": "2200 MHz",
+        "boostClock": "2500 MHz",
+        "powerConsumption": "250W",
+        "price": "£550"
+    },
+    {
+        "id": "arc4",
+        "name": "ARC 780",
+        "architecture": "Xe",
+        "memory": "16 GB HBM2e",
+        "coreClock": "1800 MHz",
+        "boostClock": "2100 MHz",
+        "powerConsumption": "300W",
+        "price": "£650"
+    },
+    {
+        "id": "arc5",
+        "name": "ARC 790",
+        "architecture": "Xe",
+        "memory": "32 GB HBM2e",
+        "coreClock": "2000 MHz",
+        "boostClock": "2300 MHz",
+        "powerConsumption": "350W",
+        "price": "£750"
+    },
+    {
+        "id": "arc6",
+        "name": "ARC 880",
+        "architecture": "Xe",
+        "memory": "32 GB HBM2e",
+        "coreClock": "2200 MHz",
+        "boostClock": "2500 MHz",
+        "powerConsumption": "400W",
+        "price": "£850"
+    },
+    {
+        "id": "arc7",
+        "name": "ARC 890",
+        "architecture": "Xe",
+        "memory": "48 GB HBM2e",
+        "coreClock": "2400 MHz",
+        "boostClock": "2700 MHz",
+        "powerConsumption": "450W",
+        "price": "£950"
+    },
+    {
+        "id": "arc8",
+        "name": "ARC 990",
+        "architecture": "Xe",
+        "memory": "64 GB HBM2e",
+        "coreClock": "2600 MHz",
+        "boostClock": "2900 MHz",
+        "powerConsumption": "500W",
+        "price": "£1050"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "rx0",
+        "name": "RX 570",
+        "architecture": "Polaris",
+        "memory": "4 GB GDDR5",
+        "coreClock": "1168 MHz",
+        "boostClock": "1244 MHz",
+        "powerConsumption": "150W",
+        "price": "£150"
+    },
+    {
+        "id": "rx1",
+        "name": "RX 580",
+        "architecture": "Polaris",
+        "memory": "8 GB GDDR5",
+        "coreClock": "1257 MHz",
+        "boostClock": "1340 MHz",
+        "powerConsumption": "185W",
+        "price": "£200"
+    },
+    {
+        "id": "rx2",
+        "name": "RX 590",
+        "architecture": "Polaris",
+        "memory": "8 GB GDDR5",
+        "coreClock": "1469 MHz",
+        "boostClock": "1545 MHz",
+        "powerConsumption": "225W",
+        "price": "£250"
+    },
+    {
+        "id": "rx3",
+        "name": "RX Vega 56",
+        "architecture": "Vega",
+        "memory": "8 GB HBM2",
+        "coreClock": "1156 MHz",
+        "boostClock": "1471 MHz",
+        "powerConsumption": "210W",
+        "price": "£300"
+    },
+    {
+        "id": "rx4",
+        "name": "RX Vega 64",
+        "architecture": "Vega",
+        "memory": "8 GB HBM2",
+        "coreClock": "1247 MHz",
+        "boostClock": "1546 MHz",
+        "powerConsumption": "295W",
+        "price": "£400"
+    },
+    {
+        "id": "rx5",
+        "name": "RX 5700",
+        "architecture": "RDNA",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1465 MHz",
+        "boostClock": "1725 MHz",
+        "powerConsumption": "180W",
+        "price": "£450"
+    },
+    {
+        "id": "rx6",
+        "name": "RX 5700 XT",
+        "architecture": "RDNA",
+        "memory": "8 GB GDDR6",
+        "coreClock": "1605 MHz",
+        "boostClock": "1905 MHz",
+        "powerConsumption": "225W",
+        "price": "£500"
+    },
+    {
+        "id": "rx7",
+        "name": "RX 6800",
+        "architecture": "RDNA 2",
+        "memory": "16 GB GDDR6",
+        "coreClock": "1700 MHz",
+        "boostClock": "2105 MHz",
+        "powerConsumption": "250W",
+        "price": "£600"
+    },
+    {
+        "id": "rx8",
+        "name": "RX 6800 XT",
+        "architecture": "RDNA 2",
+        "memory": "16 GB GDDR6",
+        "coreClock": "1825 MHz",
+        "boostClock": "2250 MHz",
+        "powerConsumption": "300W",
+        "price": "£700"
+    },
+    {
+        "id": "rx9",
+        "name": "RX 6900 XT",
+        "architecture": "RDNA 2",
+        "memory": "16 GB GDDR6",
+        "coreClock": "2015 MHz",
+        "boostClock": "2250 MHz",
+        "powerConsumption": "300W",
+        "price": "£800"
+    }
+]

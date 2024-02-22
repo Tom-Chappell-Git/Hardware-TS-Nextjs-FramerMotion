@@ -13,6 +13,7 @@ interface GpuProductCardProps {
         coreClock: string;
         boostClock: string;
         powerConsumption: string;
+        price: string;
     };
 }
 
@@ -52,6 +53,10 @@ const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
             <Tooltip title="The power consumption of the GPU." 
             placement="right">
                 <p>Power Consumption: {product.powerConsumption}</p>
+            </Tooltip>
+            <Tooltip title="The price of the GPU."
+            placement="right">
+                <p>Price: {product.price}</p>
             </Tooltip>
 
         </div>

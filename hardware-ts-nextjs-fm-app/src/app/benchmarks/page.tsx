@@ -105,7 +105,7 @@ const Benchmarks: React.FC = () => {
             return (
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
-
+                
                 {/* If the percentage increase is greater than 0, render the text in green, else render it in red */}
                 {percentageIncrease > 0 ? (
                   <p style={{ color: '#42f542' }}>{updatedTable[highlightedRow][0]} has a {percentageIncrease.toFixed(2)}% higher Median Score</p>
@@ -122,6 +122,7 @@ const Benchmarks: React.FC = () => {
             transition={{ duration: 1 }}
           >
             <div className="mt-10">
+              <Tooltip title="Select a device from each table to compare" arrow>
               <table className="border-2 w-full mx-auto">
                 <thead>
                   <tr> 
@@ -157,6 +158,7 @@ const Benchmarks: React.FC = () => {
                     ))}
                 </tbody>
               </table>
+              </Tooltip>
             </div>
 
                           {/* Link to the Blender website where the stats came from */}
@@ -223,6 +225,7 @@ const Benchmarks: React.FC = () => {
             transition={{ duration: 1 }}
           >
             <section className="mt-10">
+            <Tooltip title="Select a device from each table to compare" arrow>
               <table className="border-2 w-full mx-auto">
                 <thead>
                   <tr>
@@ -258,6 +261,7 @@ const Benchmarks: React.FC = () => {
                     ))}
                 </tbody>
               </table>
+              </Tooltip>
             </section>
                         {/* Link to the Blender website where the stats came from */}
             <article className="col-span-2 text-white underline text-xs ">

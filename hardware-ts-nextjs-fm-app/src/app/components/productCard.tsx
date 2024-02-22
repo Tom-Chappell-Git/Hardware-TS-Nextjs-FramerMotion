@@ -14,6 +14,7 @@ interface Product {
     cache: string;
     tdp: string;
     architecture: string;
+    price: string;
 }
 
 // ProductCard is a functional component that takes in a product prop of type ProductCardProps.
@@ -67,6 +68,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
             <Tooltip title="CPU design. Often used to check if it is compatible the motherboard and RAM." 
                         placement="right">
                 <p aria-label="Architecture">Architecture: {product.architecture}</p>
+            </Tooltip>
+            <Tooltip title="Price in GBP (£)" 
+                        placement="right">
+                <p aria-label="Price">Price: {product.price}</p>
             </Tooltip>
         </div>
     </div>

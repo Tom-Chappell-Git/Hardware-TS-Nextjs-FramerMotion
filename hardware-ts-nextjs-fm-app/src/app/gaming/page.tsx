@@ -7,7 +7,8 @@ import { useState } from "react";
 import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileNavbar";
 import gamingData from '../productinfos/gaming.json';
-import { useMediaQuery } from "@mui/material";
+
+import { Tooltip, useMediaQuery } from "@mui/material";
 
 type Game = {
     "game title": string;
@@ -64,6 +65,7 @@ const Gaming: React.FC = () => {
                                 <div className="flex flex-col justify-center items-center">
                                     <h1 className="text-4xl font-bold text-white mb-4">Game Benchmarks</h1>
                                     <div className="w-full flex justify-center items-center">
+                                        <Tooltip title="Search for a game" arrow>
                                         <label  htmlFor="search" aria-label="search input for gaming benchmarks"
                                                 className="w-full" >
                                         <input
@@ -75,10 +77,12 @@ const Gaming: React.FC = () => {
                                             onChange={(e) => setSearchTerm(e.target.value)} // Update the search term state when the input value changes
                                         />
                                         </label>
+                                        </Tooltip>
                                     </div>
 
                                     {/* Create a table to display the gaming data */}
                                     <div className="w-full flex justify-center items-center">
+                                        <Tooltip title="Select a device" arrow>
                                         <table className="w-3/4 mt-8">
                                             <thead>
                                                 <tr>
@@ -110,6 +114,7 @@ const Gaming: React.FC = () => {
                                                 ))}
                                             </tbody>
                                         </table>
+                                        </Tooltip>
                                     </div>
                                 </div>
                             </div>

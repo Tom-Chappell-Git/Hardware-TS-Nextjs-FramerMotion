@@ -6,7 +6,8 @@
         "memory": "6 GB GDDR5",
         "coreClock": "1506 MHz",
         "boostClock": "1708 MHz",
-        "powerConsumption": "120W"
+        "powerConsumption": "120W",
+        "price": "£200"
     },
     {
         "id": "tx1",
@@ -15,7 +16,8 @@
         "memory": "8 GB GDDR5",
         "coreClock": "1506 MHz",
         "boostClock": "1683 MHz",
-        "powerConsumption": "150W"
+        "powerConsumption": "150W",
+        "price": "£300"
     },
     {
         "id": "tx2",
@@ -24,7 +26,8 @@
         "memory": "8 GB GDDR5X",
         "coreClock": "1607 MHz",
         "boostClock": "1733 MHz",
-        "powerConsumption": "180W"
+        "powerConsumption": "180W",
+        "price": "£400"
     },
     {
         "id": "tx3",
@@ -33,7 +36,8 @@
         "memory": "11 GB GDDR5X",
         "coreClock": "1480 MHz",
         "boostClock": "1582 MHz",
-        "powerConsumption": "250W"
+        "powerConsumption": "250W",
+        "price": "£600"
     },
     {
         "id": "tx4",
@@ -42,7 +46,8 @@
         "memory": "6 GB GDDR6",
         "coreClock": "1365 MHz",
         "boostClock": "1680 MHz",
-        "powerConsumption": "160W"
+        "powerConsumption": "160W",
+        "price": "£350"
     },
     {
         "id": "tx5",
@@ -51,7 +56,8 @@
         "memory": "8 GB GDDR6",
         "coreClock": "1410 MHz",
         "boostClock": "1620 MHz",
-        "powerConsumption": "175W"
+        "powerConsumption": "175W",
+        "price": "£450"
     },
     {
         "id": "tx6",
@@ -60,7 +66,8 @@
         "memory": "8 GB GDDR6",
         "coreClock": "1515 MHz",
         "boostClock": "1800 MHz",
-        "powerConsumption": "215W"
+        "powerConsumption": "215W",
+        "price": "£600"
     },
     {
         "id": "tx7",
@@ -69,7 +76,8 @@
         "memory": "11 GB GDDR6",
         "coreClock": "1350 MHz",
         "boostClock": "1635 MHz",
-        "powerConsumption": "250W"
+        "powerConsumption": "250W",
+        "price": "£800"
     },
     {
         "id": "tx8",
@@ -78,7 +86,8 @@
         "memory": "12 GB GDDR6",
         "coreClock": "1320 MHz",
         "boostClock": "1777 MHz",
-        "powerConsumption": "170W"
+        "powerConsumption": "170W",
+        "price": "£400"
     },
     {
         "id": "tx9",
@@ -87,7 +96,8 @@
         "memory": "8 GB GDDR6",
         "coreClock": "1500 MHz",
         "boostClock": "1730 MHz",
-        "powerConsumption": "220W"
+        "powerConsumption": "220W",
+        "price": "£500"
     },
     {
         "id": "tx10",
@@ -96,7 +106,8 @@
         "memory": "10 GB GDDR6X",
         "coreClock": "1440 MHz",
         "boostClock": "1710 MHz",
-        "powerConsumption": "320W"
+        "powerConsumption": "320W",
+        "price": "£700"
     },
     {
         "id": "tx11",
@@ -105,7 +116,8 @@
         "memory": "24 GB GDDR6X",
         "coreClock": "1400 MHz",
         "boostClock": "1695 MHz",
-        "powerConsumption": "350W"
+        "powerConsumption": "350W",
+        "price": "£1500"
     },
     {
         "id": "tx12",
@@ -114,7 +126,8 @@
         "memory": "24 GB GDDR6X",
         "coreClock": "TBD",
         "boostClock": "TBD",
-        "powerConsumption": "TBD"
+        "powerConsumption": "TBD",
+        "price": "TBD"
     },
     {
         "id": "tx13",
@@ -123,7 +136,8 @@
         "memory": "16 GB GDDR6X",
         "coreClock": "TBD",
         "boostClock": "TBD",
-        "powerConsumption": "TBD"
+        "powerConsumption": "TBD",
+        "price": "TBD"
     },
     {
         "id": "tx14",
@@ -132,7 +146,8 @@
         "memory": "16 GB GDDR6X",
         "coreClock": "TBD",
         "boostClock": "TBD",
-        "powerConsumption": "TBD"
+        "powerConsumption": "TBD",
+        "price": "TBD"
     },
     {
         "id": "tx15",
@@ -141,6 +156,7 @@
         "memory": "24 GB GDDR6X",
         "coreClock": "TBD",
         "boostClock": "TBD",
-        "powerConsumption": "TBD"
+        "powerConsumption": "TBD",
+        "price": "TBD"
     }
 ]

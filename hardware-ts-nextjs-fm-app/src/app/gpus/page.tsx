@@ -4,14 +4,16 @@
 
 import { motion } from "framer-motion"
 import Head from "next/head"
-import Link from "next/link";
-import { useMediaQuery } from "@mui/material";
 
 import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileNavbar";
 import GpuProductCard from '../components/gpuCards';
+import { useMediaQuery } from "@mui/material";
+
 
 import nvidiaGpus from '../productinfos/nvidiagpus.json';
+import amdGpus from '../productinfos/amdgpus.json';
+import arcGpus from '../productinfos/arcgpus.json';
 
 
 export default function GPUs() {
@@ -44,22 +46,56 @@ export default function GPUs() {
       
            {/* NVIDIA GPUS CARDS */}
 
-           <div className="container mx-auto p-4 py-10">
+        <div className="container mx-auto p-4 py-10">
           <h2 className="text-3xl font-bold mb-6 font-mono">Nvidia GPUs</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {nvidiaGpus.map((product, index) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: index * 0.1 }}
-              >
-                <GpuProductCard product={product} />
-              </motion.div>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {nvidiaGpus.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: index * 0.1 }}
+                >
+                  <GpuProductCard product={product} />
+                </motion.div>
+              ))}
+            </div>
         </div>
-          
+
+          {/* AMD GPUS CARDS */}       
+        <div className="container mx-auto p-4 py-10">
+          <h2 className="text-3xl font-bold mb-6 font-mono">AMD GPUs</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {amdGpus.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: index * 0.1 }}
+                >
+                  <GpuProductCard product={product} />
+                </motion.div>
+              ))}
+            </div>
+        </div>
+
+          {/* ARC GPUS CARDS */}
+        <div className="container mx-auto p-4 py-10">
+          <h2 className="text-3xl font-bold mb-6 font-mono">Arc GPUs</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {arcGpus.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: index * 0.1 }}
+                >
+                  <GpuProductCard product={product} />
+                </motion.div>
+              ))}
+            </div>
+        </div>  
+
         
         </motion.div>
     </main>

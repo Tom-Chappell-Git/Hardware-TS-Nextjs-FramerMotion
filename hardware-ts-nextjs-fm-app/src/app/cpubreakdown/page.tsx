@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import Navbar from "../components/navbar";
 import MobileNavbar from "../components/mobileNavbar";
-import { useMediaQuery } from "@mui/material";
+import { Tooltip, useMediaQuery } from "@mui/material";
 
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
@@ -36,6 +36,8 @@ const CpuBreakdown: React.FC = () => {
                     <h1 className="page-title">CPU Breakdown</h1>
 
                     <p className="py-8 px-4">The CPU, or central processing unit, is the primary component of a computer responsible for executing instructions and performing calculations. It is often referred to as the &quot;brain&quot; of the computer and plays a crucial role in overall system performance.</p>
+
+                    <h2 className="mx-4 mb-4"><span className="text-yellow-600">|</span> Click on the below for more information <span className="text-yellow-600">|</span></h2>
 
                     <Accordion>
                         <AccordionSummary

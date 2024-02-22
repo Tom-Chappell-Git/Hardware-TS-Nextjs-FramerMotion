@@ -8,7 +8,8 @@
       "boost_clock": "4.2 GHz",
       "cache": "35MB",
       "tdp": "65W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£200"
     },
     {
       "id": "r1",  
@@ -19,7 +20,8 @@
       "boost_clock": "4.4 GHz",
       "cache": "35MB",
       "tdp": "95W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£250"
     },
     {
       "id": "r2", 
@@ -30,7 +32,8 @@
       "boost_clock": "4.4 GHz",
       "cache": "36MB",
       "tdp": "65W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£300"
     },
     {
       "id": "r3",
@@ -41,7 +44,8 @@
       "boost_clock": "4.5 GHz",
       "cache": "36MB",
       "tdp": "105W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£400"
     },
     {
       "id": "r4",
@@ -52,7 +56,8 @@
       "boost_clock": "4.6 GHz",
       "cache": "70MB",
       "tdp": "105W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£500"
     },
     {
       "id": "r5",
@@ -63,6 +68,79 @@
       "boost_clock": "4.7 GHz",
       "cache": "72MB",
       "tdp": "105W",
-      "architecture": "Zen 2"
+      "architecture": "Zen 2",
+      "price": "£600"
+    },
+    {
+      "id": "r6",
+      "model": "Ryzen 5 5600X",
+      "cores": "6",
+      "threads": "12",
+      "base_clock": "3.7 GHz",
+      "boost_clock": "4.6 GHz",
+      "cache": "35MB",
+      "tdp": "65W",
+      "architecture": "Zen 3",
+      "price": "£300"
+    },
+    {
+      "id": "r7",
+      "model": "Ryzen 7 5800X",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.8 GHz",
+      "boost_clock": "4.7 GHz",
+      "cache": "36MB",
+      "tdp": "105W",
+      "architecture": "Zen 3",
+      "price": "£450"
+    },
+    {
+      "id": "r8",
+      "model": "Ryzen 9 5900X",
+      "cores": "12",
+      "threads": "24",
+      "base_clock": "3.7 GHz",
+      "boost_clock": "4.8 GHz",
+      "cache": "70MB",
+      "tdp": "105W",
+      "architecture": "Zen 3",
+      "price": "£550"
+    },
+    {
+      "id": "r9",
+      "model": "Ryzen 9 5950X",
+      "cores": "16",
+      "threads": "32",
+      "base_clock": "3.4 GHz",
+      "boost_clock": "4.9 GHz",
+      "cache": "72MB",
+      "tdp": "105W",
+      "architecture": "Zen 3",
+      "price": "£750"
+    },
+    {
+      "id": "r10",
+      "model": "Ryzen 7 7700",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.6 GHz",
+      "boost_clock": "4.4 GHz",
+      "cache": "36MB",
+      "tdp": "65W",
+      "architecture": "Zen 4",
+      "price": "£400"
+    },
+    {
+      "id": "r11",
+      "model": "Ryzen 9 7900",
+      "cores": "12",
+      "threads": "24",
+      "base_clock": "3.5 GHz",
+      "boost_clock": "4.6 GHz",
+      "cache": "70MB",
+      "tdp": "105W",
+      "architecture": "Zen 4",
+      "price": "£600"
     }
 ]

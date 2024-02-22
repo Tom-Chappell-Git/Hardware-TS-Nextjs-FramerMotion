@@ -48,7 +48,7 @@ Takes benchmark data from Blender.org to give users benchmark information to inf
 ## Development Roadmap
 The following is a list of features to be added to the project, in order (though the order may change).
 
-1. Add Tooltip for benchmarks
+1. 
 2. 
 1. Fix % calculator for Benchmarks
 2. Add % calculator for Gaming
