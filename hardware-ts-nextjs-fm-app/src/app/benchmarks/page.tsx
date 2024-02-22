@@ -104,9 +104,24 @@ const Benchmarks: React.FC = () => {
             const firstTableSelected = highlightedRow !== null && highlightedRow2 !== null && highlightedRow < highlightedRow2;
 
             const percentageIncrease = firstTableSelected
-              ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100
-              : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Number(updatedTable[highlightedRow][1])) * 100;
-            return (
+  ? (
+      updatedTable[highlightedRow] &&
+      updatedTable2[highlightedRow2] &&
+      Number(updatedTable[highlightedRow][1]) &&
+      Number(updatedTable2[highlightedRow2][1])
+    )
+      ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Number(updatedTable2[highlightedRow2][1])) * 100
+      : 0
+  : (
+      updatedTable[highlightedRow] &&
+      updatedTable2[highlightedRow2] &&
+      Number(updatedTable2[highlightedRow2][1]) &&
+      Number(updatedTable[highlightedRow][1])
+    )
+      ? ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Number(updatedTable[highlightedRow][1])) * 100
+      : 0;
+
+              return (
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
                 
@@ -150,7 +165,7 @@ const Benchmarks: React.FC = () => {
                         onClick={() => setHighlightedRow(rowIndex)} // Set the highlightedRow state to the current index when the table row is clicked
                         initial={{ backgroundColor: 'transparent' }}
                         animate={{
-                          backgroundColor: highlightedRow === rowIndex ? '#4A5568' : 'transparent', // Set the background color of the table row to gray if the row is highlighted, else set it to transparent
+                          backgroundColor: highlightedRow === rowIndex ? '#FF7300' : 'transparent', // Set the background color of the table row to gray if the row is highlighted, else set it to transparent
                         }}
 
                         className={'hover:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'}
@@ -214,6 +229,7 @@ const Benchmarks: React.FC = () => {
               ? (highlightedRow < highlightedRow2
                 ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100
                 : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1]))) * 100)
+                
               : (highlightedRow < highlightedRow2) 
                 ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1])) * 100)
                 : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1])) * 100);
@@ -265,7 +281,7 @@ const Benchmarks: React.FC = () => {
                         onClick={() => setHighlightedRow2(rowIndex)} // Set the highlightedRow state to the current index when the table row is clicked
                         initial={{ backgroundColor: 'transparent' }}
                         animate={{
-                          backgroundColor: highlightedRow2 === rowIndex ? '#4A5568' : 'transparent',
+                          backgroundColor: highlightedRow2 === rowIndex ? '#FF7300' : 'transparent',
                         }}
 
                         className={'hover:bg-gray-700 transition duration-300 ease-in-out cursor-pointer'}
