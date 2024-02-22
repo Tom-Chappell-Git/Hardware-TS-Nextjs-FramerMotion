@@ -112,9 +112,9 @@ const Benchmarks: React.FC = () => {
                 
                 {/* If the percentage increase is greater than 0, render the text in green, else render it in red */}
                 {percentageIncrease > 0 ? (
-                  <p style={{ color: '#42f542' }}>{updatedTable[highlightedRow][0]} has a {percentageIncrease.toFixed(2)}% higher Median Score</p>
+                  <p style={{ color: '#ff0011' }}>{updatedTable[highlightedRow][0]} has a {percentageIncrease.toFixed(2)}% lower Median Score</p>
                 ) : (
-                  <p style={{ color: '#ff0011' }}>{updatedTable[highlightedRow][0]} has a {Math.abs(percentageIncrease).toFixed(2)}% lower Median Score</p>
+                  <p style={{ color: '#42f542' }}>{updatedTable[highlightedRow][0]} has a {Math.abs(percentageIncrease).toFixed(2)}% higher Median Score</p>
                 )}
               </div>
             );
@@ -214,7 +214,10 @@ const Benchmarks: React.FC = () => {
               ? (highlightedRow < highlightedRow2
                 ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100
                 : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1]))) * 100)
-              : 0;
+              : (highlightedRow < highlightedRow2) 
+                ? ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1])) * 100)
+                : ((Number(updatedTable2[highlightedRow2][1]) - Number(updatedTable[highlightedRow][1])) / Math.abs(Number(updatedTable[highlightedRow][1])) * 100);
+                
 
             return ( // Render the comparison section 
               
@@ -223,9 +226,9 @@ const Benchmarks: React.FC = () => {
 
                 {/* If the percentage increase is greater than 0, render the text in green, else render it in red */}
                 {percentageIncrease > 0 ? (
-                  <p style={{ color: '#ff0011' }}>{updatedTable2[highlightedRow2][0]} has a {percentageIncrease.toFixed(2)}% lower Median Score</p>
+                  <p style={{ color: '#42f542' }}>{updatedTable2[highlightedRow2][0]} has a {percentageIncrease.toFixed(2)}% higher Median Score</p>
                 ) : (
-                  <p style={{ color: '#42f542' }}>{updatedTable2[highlightedRow2][0]} has a {Math.abs(percentageIncrease).toFixed(2)}% higher Median Score</p>
+                  <p style={{ color: '#ff0011' }}>{updatedTable2[highlightedRow2][0]} has a {Math.abs(percentageIncrease).toFixed(2)}% lower Median Score</p>
                 )}
 
               </div>
