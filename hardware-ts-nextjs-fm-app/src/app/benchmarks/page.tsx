@@ -4,12 +4,15 @@
 import { motion } from "framer-motion"
 import Head from "next/head"
 import { useState } from "react"
+import Link from "next/link"
 
 import Navbar from "../components/navbar";
 import benchmarksJson from '../productinfos/blender.json';
-import Link from "next/link";
-import { useMediaQuery } from "@mui/material";
 import MobileNavbar from "../components/mobileNavbar";
+
+import { useMediaQuery } from "@mui/material";
+import { Tooltip } from "@mui/material";
+
 
 
 
@@ -76,6 +79,7 @@ const Benchmarks: React.FC = () => {
           >
             <div className="flex justify-left items-center mt-24">
               <div className="w-full flex justify-center items-center">
+                <Tooltip title="Search for a CPU or GPU by typing into the input field" arrow>
                 <label  htmlFor="searchInput" aria-label="Search for a CPU or GPU by typing into the input field one"
                         className="w-full"
                 >
@@ -88,6 +92,7 @@ const Benchmarks: React.FC = () => {
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
                 </label>
+                </Tooltip>
               </div>
             </div>
           </motion.div>
@@ -173,6 +178,7 @@ const Benchmarks: React.FC = () => {
           >
             <div className="flex justify-left items-center mt-24">
               <div className="w-full flex justify-center items-center">
+              <Tooltip title="Search for a CPU or GPU by typing into the input field" arrow>
               <label  htmlFor="searchInput" aria-label="Search for a CPU or GPU by typing into the input field two"
                       className="w-full"
                 >
@@ -186,6 +192,7 @@ const Benchmarks: React.FC = () => {
                   onChange={(e) => setSearchTerm2(e.target.value)} // Update the search term state when the input value changes 
                 />
               </label>
+              </Tooltip>
               </div>
             </div>
           </motion.article>
@@ -195,6 +202,7 @@ const Benchmarks: React.FC = () => {
             const percentageIncrease = ((Number(updatedTable[highlightedRow][1]) - Number(updatedTable2[highlightedRow2][1])) / Math.abs(Number(updatedTable2[highlightedRow2][1]))) * 100; 
 
             return ( // Render the comparison section 
+              
               <div className="mt-4">
                 <h2 className="underline">Comparison:</h2>
 
@@ -204,6 +212,7 @@ const Benchmarks: React.FC = () => {
                 ) : (
                   <p style={{ color: '#42f542' }}>{updatedTable2[highlightedRow2][0]} has a {Math.abs(percentageIncrease).toFixed(2)}% higher Median Score</p>
                 )}
+
               </div>
             );
           })()}
