@@ -9,7 +9,7 @@
       "cache": "20MB",
       "tdp": "180W",
       "architecture": "Zen",
-      "price_in_gbp": "£299"
+      "price": "£299"
     },
     {
       "id": "tr1",  
@@ -21,7 +21,7 @@
       "cache": "38MB",
       "tdp": "180W",
       "architecture": "Zen",
-      "price_in_gbp": "£449"
+      "price": "£449"
     },
     {
       "id": "tr2", 
@@ -33,7 +33,7 @@
       "cache": "40MB",
       "tdp": "180W",
       "architecture": "Zen",
-      "price_in_gbp": "£599"
+      "price": "£599"
     },
     {
       "id": "tr3",
@@ -45,7 +45,7 @@
       "cache": "140MB",
       "tdp": "280W",
       "architecture": "Zen 2",
-      "price_in_gbp": "£1049"
+      "price": "£1049"
     },
     {
       "id": "tr4",
@@ -57,7 +57,7 @@
       "cache": "144MB",
       "tdp": "280W",
       "architecture": "Zen 2",
-      "price_in_gbp": "£1499"
+      "price": "£1499"
     },
     {
       "id": "tr5",
@@ -69,6 +69,6 @@
       "cache": "288MB",
       "tdp": "280W",
       "architecture": "Zen 2",
-      "price_in_gbp": "£2999"
+      "price": "£2999"
     }
 ]
