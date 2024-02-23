@@ -21,7 +21,7 @@ interface GpuProductCardProps {
 const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
     <div className="product-card border p-4 rounded-md shadow-md mb-4" onClick={() => console.log("clicked")}>
         <Image className="w-full h-40 object-contain mb-4 rounded-md"
-            src={`/assets/tx/${product.id}.png`} 
+            src={`/assets/gpuImages/${product.id}.png`} 
             alt={"image of " + product.name}
             width={1000}
             height={1000}

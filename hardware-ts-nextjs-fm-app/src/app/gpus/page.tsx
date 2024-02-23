@@ -26,7 +26,7 @@ export default function GPUs() {
 
       <Head>
         <title>GPUs</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <motion.div
         initial={{ opacity: 0 }}
