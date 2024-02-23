@@ -54,10 +54,10 @@ const GpuProductCard: React.FC<GpuProductCardProps> = ({ product }) => (
             placement="right">
                 <p>Power Consumption: {product.powerConsumption}</p>
             </Tooltip>
-            <Tooltip title="The price of the GPU."
+            {/* <Tooltip title="The price of the GPU."
             placement="right">
                 <p>Price: {product.price}</p>
-            </Tooltip>
+            </Tooltip> */}
 
         </div>
     </div>
