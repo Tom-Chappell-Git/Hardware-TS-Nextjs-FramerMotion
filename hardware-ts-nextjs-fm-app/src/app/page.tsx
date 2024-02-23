@@ -23,6 +23,7 @@ interface GpuProduct {
   coreClock: string;
   boostClock: string;
   powerConsumption: string;
+  price: string;
 }
 
 interface Threadripper {
@@ -34,7 +35,8 @@ base_clock: string;
 boost_clock: string; 
 cache: string;
 tdp: string;
-architecture: string;     
+architecture: string;
+price: string;
 }
 
 interface Ryzen {
@@ -47,6 +49,7 @@ boost_clock: string;
 cache: string;
 tdp: string;
 architecture: string;
+price: string;
 }
 
 
