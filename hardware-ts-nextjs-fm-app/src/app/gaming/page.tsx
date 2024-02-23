@@ -60,10 +60,10 @@ const Gaming: React.FC = () => {
                         transition={{ duration: 1 }}
                     >
                         {/* Create a container to hold the content */}
-                        <div className="flex justify-left items-center mt-24"></div>
+                        <section className="flex justify-left items-center mt-24"></section>
                             <div className="w-full flex justify-center items-center">
                                 <div className="flex flex-col justify-center items-center">
-                                    <h1 className="text-4xl font-bold text-white mb-4">Game Benchmarks</h1>
+                                    <header aria-label="Video Game Benchmarks"><h1 className="text-4xl font-bold text-white mb-4">Game Benchmarks</h1></header>
                                     <div className="w-full flex justify-center items-center">
                                         <Tooltip title="Search for a game" arrow>
                                         <label  htmlFor="search" aria-label="search input for gaming benchmarks"
@@ -123,7 +123,8 @@ const Gaming: React.FC = () => {
 
                     <section className="mr-4 grid-span-2">
 
-                        <h2 className="my-36 mx-10">Game Data</h2>
+                        <h2 className="my-36 mx-10">This page is a work-in progress. <br>
+                        </br> Many features are still being built.</h2>
 
                     </section>
                     

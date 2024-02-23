@@ -49,6 +49,7 @@ Takes benchmark data from Blender.org to give users benchmark information to inf
 The following is a list of features to be added to the project, in order (though the order may change).
 
 1. Add release dates to devices 
+2. 
 2. Break CPU and component pages down into smaller components; RTX, RX, ARC, Ryzen, Threadripper, etc.
 3. Add Logo and favicon
 4. Link from product card to benchmarks and vice versa.
@@ -58,10 +59,19 @@ The following is a list of features to be added to the project, in order (though
 8. Add % calculator for Gaming
 9. Price to performance indicators on Benchmark pages
 10. Break pages down into smaller components
+11. Store types in their own module/file?
+11. On CPU and GPU breakdown pages, have clickable links at the top, with anchors that take the user to the relevant part of the page
 11. Reduce image resolutions/file sizes for quicker load times
 12. Add backend, possibly with Supabase
+
+## Accessibility development
+1. Functionality to allow users to tab through table rows so that screen readers can be used to navigate tables
+2. Make product cards able to be tabbed through and read by screen-readers.
+
+Check MUI for possible uses.
 
 
 ## Minor changes to be made
 
 1. Correct RTX 4080 image
+2. Correct all Arc GPU images

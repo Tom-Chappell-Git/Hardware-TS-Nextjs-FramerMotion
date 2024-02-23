@@ -26,7 +26,7 @@ export default function GPUs() {
 
       <Head>
         <title>GPUs</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <motion.div
         initial={{ opacity: 0 }}
@@ -34,8 +34,8 @@ export default function GPUs() {
         transition={{ duration: 1}}
       >
           {isMobile ? <MobileNavbar /> : <Navbar />}
-
-        <h1 className="page-title">GPUs</h1>    
+        <header aria-label="GPU list page"> <h1 className="page-title">GPUs</h1>  </header>
+         
       </motion.div>
 
       <motion.div

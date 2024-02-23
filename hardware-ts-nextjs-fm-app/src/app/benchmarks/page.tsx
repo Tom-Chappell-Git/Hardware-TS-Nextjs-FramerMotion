@@ -59,15 +59,16 @@ const Benchmarks: React.FC = () => {
       {/* Provide grid layout with two columns on large screens, 1 on small and med */}
       <main className="wrapper">
 
-      <motion.h1 className="page-title"
+      <header aria-label="3D software Benchmarks"><motion.h1 className="page-title"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1}}
-        >3D Benchmarks</motion.h1>
+        >3D Benchmarks</motion.h1></header>
+
 
       <section className="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-0 sm:gap-0 bench3d benchxsm">
 
-        <section className="mr-4 grid-cols-1 ">
+        <div className="mr-4 grid-cols-1 ">
 
         {isMobile ? <MobileNavbar /> : <Navbar />}
 
@@ -186,7 +187,7 @@ const Benchmarks: React.FC = () => {
           </article>
           
           </motion.article>
-        </section>
+        </div>
 
 
 {/* ------------------- Table 2 ----------------- */}
